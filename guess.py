@@ -1,3 +1,5 @@
+#Guess Game#
+
 secret_num1 = "2"
 guess = " "
 guess_count = 0
@@ -13,7 +15,4 @@ while guess != secret_num1 and not(out_of_guesses):
                 print("out of guesses, You Lose! ")
             else:
                     print("You win! ")
-
-
-
-# testing git
+                    
