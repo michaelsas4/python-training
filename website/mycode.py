@@ -56,7 +56,7 @@ class MyGrid(GridLayout):
         age = self.age.text
         country = self.country.text
 
-        print("name:", name, "Last Name:", last, "school:", school, "username:", username, "password:", password, "age:", age, "country:", country)
+        print("name:" +name+ "Last Name:" +last+ "school:" +school+ "username:"+ username+ "password:" +password+ "age:" +age+ "country:"+ country)
 
 
 class MyApp(App):

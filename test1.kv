@@ -1,0 +1,58 @@
+<first>:
+    name: name
+    email: email
+    country: country
+    age: age
+    userId: userId
+    school: school
+    password: pas
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        
+        GridLayout:
+            cols:2
+
+            Label:
+                text:"Name "
+            TextInput:
+                id: name
+                multiline:False
+            Label:
+                text:"Email "
+            TextInput:
+                id: email
+                multiline:False
+            Label:
+                text:"Password "
+            TextInput:
+                id: pas
+                multiline:False
+            Label:
+                text:"Country "
+            TextInput:
+                id: country
+                multiline:False
+            Label:
+                text:"Age "
+            TextInput:
+                id: age
+                multiline:False
+            Label:
+                text:"School "
+            TextInput:
+                id: school
+                multiline:False
+            Label:
+                text:"Your ID "
+            TextInput:
+                id: userId
+                multiline:False
+        
+        TextInput:
+            multiline:False 
+        
+        Button:
+            text:"Submit"
+            on_press: root.btn()

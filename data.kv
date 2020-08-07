@@ -1,0 +1,24 @@
+<data>
+    name: name
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        
+        GridLayout:
+            cols:2
+
+            Label:
+                text:"Name "
+            TextInput:
+                id: name
+                multiline:False         
+                 
+        TextInput:
+            id:entry
+            multiline:False 
+        
+        Button:
+            text:"Submit"
+            on_press: entry.text = root.btn()
+    

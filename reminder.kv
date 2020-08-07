@@ -1,0 +1,43 @@
+<first>:
+
+    alar: alar
+    hour: hour
+    minutes: minutes
+    seconds: seconds
+  
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        Label: 
+            text:"REMINDER"
+        
+        GridLayout:
+            cols:2
+            
+            Label:
+                text:"Set Your Reminder "
+            TextInput:
+                id: alar
+                multiline:False
+            Label:
+                text:"hour "
+            TextInput:
+                id: hour
+                multiline:False
+            Label:
+                text:"minutes "
+            TextInput:
+                id: minutes
+                multiline:False
+            Label:
+                text:"seconds "
+            TextInput:
+                id: seconds
+                multiline:False
+                   
+        TextInput:
+            multiline:False 
+        
+        Button:
+            text:"Submit"
+            on_press:root.alarm()
